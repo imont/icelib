@@ -2881,6 +2881,7 @@ ICELIB_makePeerLocalReflexiveCandidate(ICE_CANDIDATE*         pPeerCandidate,
                  (struct sockaddr*)pMappedAddress );
   pPeerCandidate->type        = ICE_CAND_TYPE_PRFLX;
   pPeerCandidate->componentid = componentId;
+  pPeerCandidate->socket      = socketfd;
   ICELIB_createFoundation(pPeerCandidate->foundation,
                           ICE_CAND_TYPE_PRFLX,
                           transport,
