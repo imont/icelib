@@ -4076,7 +4076,7 @@ beach:
                                proto,
                                destination,            /* source */
                                source,                 /* destination */
-                               source,                 /* MappedAddress */
+                               relayBaseAddr,          /* MappedAddress */
                                userValue1,             /* userValue1 */
                                userValue2,             /* userValue2 */
                                componentId,
